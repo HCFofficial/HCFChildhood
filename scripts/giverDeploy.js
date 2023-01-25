@@ -1,10 +1,10 @@
 const main = async () => {
 
-  const Giver = await ethers.getContractFactory("giver");
+  const Giver = await ethers.getContractFactory("Giver");
   const giver = await Giver.deploy();
 
   await giver.deployed()
-  console.log("Giver deployed to:", hcfh.address);
+  console.log("Giver deployed to:", giver.address);
 
 };
 
